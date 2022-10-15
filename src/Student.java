@@ -13,7 +13,7 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
 
-        this.userName = firstName.charAt(0) + lastName;
+        this.userName = firstName.charAt(0) + lastName; //char an dem Index 0 (erster Buchstabe)
         //this.userName = firstName.substring(0,1) + lastName;
     }
 
