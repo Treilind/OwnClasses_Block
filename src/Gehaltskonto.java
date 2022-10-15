@@ -5,6 +5,9 @@ public class Gehaltskonto {
     private String bic;
     private double kontostand;
 
+    public static int counter = 9867; //Klassenattribut --> "static"
+    private int fortlaufendeNummer;
+
 
     //code --> generate --> constructor
     public Gehaltskonto (String inhaber, String iban, String bic){
@@ -13,6 +16,8 @@ public class Gehaltskonto {
         this.bic = bic;
 
         this.kontostand = 0.0;
+        this.counter ++;
+        this.fortlaufendeNummer = this.counter;
     }
 
     public void aufbuchen (double wert){
@@ -73,6 +78,8 @@ public class Gehaltskonto {
     @Override
     public String toString() {
         return "Gehaltskonto{" +
+                "counter='" + counter + '\'' +
+                "fortlaufendeNummer='" + fortlaufendeNummer + '\'' +
                 "inhaber='" + inhaber + '\'' +
                 ", iban='" + iban + '\'' +
                 ", bic='" + bic + '\'' +
