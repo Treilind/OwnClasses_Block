@@ -16,7 +16,7 @@ public class Bank {
         konto3.aufbuchen(1500);
 
         for (int i = 0; i < konten.length; i++) {
-            System.out.println("konten[i].toString() = " + konten[i].toString());
+            System.out.println("Konto" + (i+1) + ": " + konten[i].toString());
             
         }
         

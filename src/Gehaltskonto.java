@@ -5,6 +5,8 @@ public class Gehaltskonto {
     private String bic;
     private double kontostand;
 
+
+    //code --> generate --> constructor
     public Gehaltskonto (String inhaber, String iban, String bic){
         this.inhaber = inhaber;
         this.iban = iban;
@@ -13,16 +15,26 @@ public class Gehaltskonto {
         this.kontostand = 0.0;
     }
 
-    public void aufbuchen (double kontostand){
-        this.kontostand = this.kontostand + kontostand;
+    public void aufbuchen (double wert){
+        if (wert > 0) {
+            this.kontostand = this.kontostand + wert;
+            System.out.println("Aufbuchungswert:" + wert + "  Neuer Kontostand: " + this.kontostand);
+        }
+        else
+            System.out.println("Wert muss positiv sein" + wert);
     }
 
-    public void abbuchen (double kontostand){
-        if ((this.kontostand - kontostand) <= 0 ){
-            System.out.println("Sie haben nicht genug am Konto für diese Buchung");
+    public void abbuchen (double wert){
+        if (wert > 0) {
+            if ((this.kontostand - wert) <= 0) {
+                System.out.println("Sie haben nicht genug am Konto für diese Buchung");
+            } else {
+                this.kontostand = this.kontostand - wert;
+                System.out.println("Abbuchungswert:" + wert + "  Neuer Kontostand: " + this.kontostand);
+            }
         }
         else {
-            this.kontostand = this.kontostand - kontostand;
+            System.out.println("Wert muss positiv sein: " +wert);
         }
     }
 
