@@ -20,4 +20,12 @@ public class CardStack {
 
         return less;
     }
+
+    public Card[] getCards() {
+        return cards;
+    }
+
+    public int getCounter() {
+        return counter;
+    }
 }

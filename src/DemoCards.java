@@ -23,7 +23,7 @@ public class DemoCards {
         stack.push(card2);
         stack.push(card3);
 
-        for (int i = 0; i < stack1.length; i++) {
+        for (int i = 0; i <= stack.getCounter(); i++) {
             System.out.println("stack1[i] = " + stack1[i]);
             if (stack1[i+1] == null){
                 break;
@@ -36,7 +36,7 @@ public class DemoCards {
         System.out.println();
         System.out.println();
 
-        for (int i = 0; i < stack1.length; i++) {
+        for (int i = 0; i <= stack.getCounter(); i++) {
             System.out.println("stack1[i] = " + stack1[i]);
             if (stack1[i+1] == null){
                 break;
