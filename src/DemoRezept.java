@@ -12,6 +12,10 @@ public class DemoRezept {
 
         rezept1.printRezept();
 
+        rezept1.umrechnen(8).printRezept();
+
+
+
 
     }
 }

@@ -18,20 +18,24 @@ public class Rezept {
     }
 
     public Rezept umrechnen (int personen){
-        int mengeZutat;
-        Rezept ergebnis = new Rezept(this.nameRezept, this.personen, this.zutaten);
+        Rezept newRezept = null;
+        Zutat[] newZutaten = null;
 
+        if (this.zutaten.length > 0) {
+            newZutaten = new Zutat[this.zutaten.length];
 
-        for (int i = 0; i < zutaten.length; i++) {
-            Zutat eins = zutaten[i];
-            mengeZutat = (eins.getMenge() / this.personen) * personen;
+            for (int i = 0; i < this.zutaten.length; i++) {
+                int oldMenge = this.zutaten[i].getMenge();
+                int newMenge = oldMenge / this.personen * personen;
 
+                newZutaten[i] = new Zutat(this.zutaten[i].getName(), newMenge);
+            }
+
+           newRezept = new Rezept(this.nameRezept, personen, newZutaten);
         }
 
 
-
-
-        return ergebnis;
+        return newRezept;
     }
 
     public String getNameRezept() {
