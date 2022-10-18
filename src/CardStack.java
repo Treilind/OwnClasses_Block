@@ -15,6 +15,7 @@ public class CardStack {
 
     public Card pop () {
         Card less  = cards[counter];
+        cards[counter] = null;
         counter --;
 
         return less;
