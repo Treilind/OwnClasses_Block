@@ -1,3 +1,5 @@
+package Abschreibung;
+
 public class DemoAnlage {
     public static void main(String[] args) {
 

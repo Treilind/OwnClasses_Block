@@ -1,3 +1,5 @@
+package CardStack;
+
 public class Card {
 
     private int value;
@@ -30,7 +32,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
+        return "CardStack.Card{" +
                 "value=" + value +
                 ", colour='" + colour + '\'' +
                 '}';

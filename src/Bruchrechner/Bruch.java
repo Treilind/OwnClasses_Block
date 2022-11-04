@@ -1,3 +1,5 @@
+package Bruchrechner;
+
 public class Bruch {
 
     private int zaehler;

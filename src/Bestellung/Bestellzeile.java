@@ -1,3 +1,5 @@
+package Bestellung;
+
 public class Bestellzeile {
 
     private String name;
@@ -30,7 +32,7 @@ public class Bestellzeile {
 
     @Override
     public String toString() {
-        return "Bestellzeile{" +
+        return "Bestellung.Bestellzeile{" +
                 "name='" + name + '\'' +
                 ", menge=" + menge +
                 ", preis=" + preis +

@@ -1,3 +1,5 @@
+package OwnClassesErsteUebung;
+
 public class Student {
     private int number;
     private String firstName;
@@ -52,7 +54,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student{" +
+        return "OwnClassesErsteUebung.Student{" +
                 "number=" + number +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

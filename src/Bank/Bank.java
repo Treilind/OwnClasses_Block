@@ -1,3 +1,5 @@
+package Bank;
+
 public class Bank {
 
     public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class Bank {
         }
         
         //übungen mit static
-        System.out.println("Gehaltskonto.counter = " + Gehaltskonto.counter);
+        System.out.println("Bank.Gehaltskonto.counter = " + Gehaltskonto.counter);
         
         
         

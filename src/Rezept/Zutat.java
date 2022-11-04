@@ -1,3 +1,5 @@
+package Rezept;
+
 public class Zutat {
 
     private String name;

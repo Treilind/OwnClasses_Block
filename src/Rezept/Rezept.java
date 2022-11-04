@@ -1,3 +1,5 @@
+package Rezept;
+
 public class Rezept {
 
     private String nameRezept;
@@ -13,7 +15,7 @@ public class Rezept {
     public void printRezept() {
         System.out.println("nameRezept = " + nameRezept);
         for (int i = 0; i < zutaten.length; i++) {
-            System.out.println("Zutat" + (i+1) + ": " + zutaten[i].getName() + "  " + zutaten[i].getMenge());
+            System.out.println("Rezept.Zutat" + (i+1) + ": " + zutaten[i].getName() + "  " + zutaten[i].getMenge());
         }
     }
 

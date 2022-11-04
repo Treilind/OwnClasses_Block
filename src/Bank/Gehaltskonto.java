@@ -1,3 +1,5 @@
+package Bank;
+
 public class Gehaltskonto {
 
     private String inhaber;
@@ -77,7 +79,7 @@ public class Gehaltskonto {
 
     @Override
     public String toString() {
-        return "Gehaltskonto{" +
+        return "Bank.Gehaltskonto{" +
                 "counter='" + counter + '\'' +
                 "fortlaufendeNummer='" + fortlaufendeNummer + '\'' +
                 "inhaber='" + inhaber + '\'' +

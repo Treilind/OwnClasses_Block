@@ -1,3 +1,5 @@
+package OwnClassesErsteUebung;
+
 public class Person {
     //Unsere Klassen haben KEINE main-Methoden
 
@@ -64,7 +66,7 @@ public class Person {
 
     @Override
     public String toString() { //Code --> Generate --> toString
-        return "Person{" +
+        return "OwnClassesErsteUebung.Person{" +
                 "uniqueID=" + uniqueID +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

@@ -1,3 +1,5 @@
+package Abschreibung;
+
 public class Anlage {
 
     private String bezeichnung;
@@ -77,7 +79,7 @@ public class Anlage {
 
     @Override
     public String toString() {
-        return "Anlage{" +
+        return "Abschreibung.Anlage{" +
                 "bezeichnung='" + bezeichnung + '\'' +
                 ", initialWert=" + initialWert +
                 ", nutzungsdauer=" + nutzungsdauer +

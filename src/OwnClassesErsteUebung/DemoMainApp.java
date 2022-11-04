@@ -1,8 +1,10 @@
+package OwnClassesErsteUebung;
+
 public class DemoMainApp {
     public static void main(String[] args) {
         System.out.println("Hello World");
 
-        Person susi; //Ein Objekt/Variable von (Daten)Typ Person für Susi
+        Person susi; //Ein Objekt/Variable von (Daten)Typ OwnClassesErsteUebung.Person für Susi
         susi = new Person();
 
         susi.uniqueID = 4711;
