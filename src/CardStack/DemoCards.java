@@ -16,7 +16,7 @@ public class DemoCards {
 
         Card[] stack1 = new Card[10];
         
-        CardStack stack = new CardStack(stack1);
+        Stack<Card> stack = new Stack<Card>(stack1);
         
         stack.push(card1);
         stack.push(card6);
